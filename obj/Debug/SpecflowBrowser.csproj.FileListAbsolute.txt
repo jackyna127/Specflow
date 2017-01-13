@@ -1,0 +1,13 @@
+c:\users\lyi\documents\visual studio 2013\Projects\SpecflowBrowser\SpecflowBrowser\bin\Debug\SpecflowBrowser.dll.config
+c:\users\lyi\documents\visual studio 2013\Projects\SpecflowBrowser\SpecflowBrowser\bin\Debug\SpecflowBrowser.dll
+c:\users\lyi\documents\visual studio 2013\Projects\SpecflowBrowser\SpecflowBrowser\bin\Debug\SpecflowBrowser.pdb
+c:\users\lyi\documents\visual studio 2013\Projects\SpecflowBrowser\SpecflowBrowser\bin\Debug\nunit.framework.dll
+c:\users\lyi\documents\visual studio 2013\Projects\SpecflowBrowser\SpecflowBrowser\bin\Debug\TechTalk.SpecFlow.dll
+c:\users\lyi\documents\visual studio 2013\Projects\SpecflowBrowser\SpecflowBrowser\bin\Debug\WebDriver.dll
+c:\users\lyi\documents\visual studio 2013\Projects\SpecflowBrowser\SpecflowBrowser\bin\Debug\WebDriver.Support.dll
+c:\users\lyi\documents\visual studio 2013\Projects\SpecflowBrowser\SpecflowBrowser\bin\Debug\nunit.framework.xml
+c:\users\lyi\documents\visual studio 2013\Projects\SpecflowBrowser\SpecflowBrowser\bin\Debug\WebDriver.xml
+c:\users\lyi\documents\visual studio 2013\Projects\SpecflowBrowser\SpecflowBrowser\bin\Debug\WebDriver.Support.xml
+c:\users\lyi\documents\visual studio 2013\Projects\SpecflowBrowser\SpecflowBrowser\obj\Debug\SpecflowBrowser.dll
+c:\users\lyi\documents\visual studio 2013\Projects\SpecflowBrowser\SpecflowBrowser\obj\Debug\SpecflowBrowser.pdb
+C:\Users\lyi\documents\visual studio 2013\Projects\SpecflowBrowser\SpecflowBrowser\obj\Debug\SpecflowBrowser.csprojResolveAssemblyReference.cache

@@ -89,18 +89,16 @@ namespace SpecflowBrowser.Features
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("01 Successful Login with Valid Credentials")]
         [NUnit.Framework.TestCaseAttribute("Chrome", Category="Chrome", TestName="_01SuccessfulLoginWithValidCredentials on Chrome")]
-        [NUnit.Framework.TestCaseAttribute("Firefox", Category="Firefox", TestName="_01SuccessfulLoginWithValidCredentials on Firefox")]
         public virtual void _01SuccessfulLoginWithValidCredentials(string browser)
         {
             InitializeSelenium(browser);
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("01 Successful Login with Valid Credentials", new string[] {
-                        "Browser:Chrome",
-                        "Browser:Firefox"});
-#line 9
+                        "Browser:Chrome"});
+#line 8
 this.ScenarioSetup(scenarioInfo);
-#line 10
+#line 9
  testRunner.Given("User is at the Home Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 11
+#line 10
  testRunner.And("Navigate to LogIn Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             TechTalk.SpecFlow.Table table1 = new TechTalk.SpecFlow.Table(new string[] {
@@ -109,24 +107,24 @@ this.ScenarioSetup(scenarioInfo);
             table1.AddRow(new string[] {
                         "test_spec1",
                         "3hKmEiWd)zDZ#hJO"});
-#line 12
+#line 11
  testRunner.When("User enter username and password", ((string)(null)), table1, "When ");
-#line 15
+#line 14
  testRunner.And("Click on the LogIn button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 16
+#line 15
  testRunner.Then("Successful LogIN message should display", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             TechTalk.SpecFlow.Table table2 = new TechTalk.SpecFlow.Table(new string[] {
                         "searchtext"});
             table2.AddRow(new string[] {
                         "Mouse"});
-#line 17
+#line 16
  testRunner.When("User enter search text to search input", ((string)(null)), table2, "When ");
-#line 20
+#line 19
  testRunner.Then("Successful search result items should display", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line 21
+#line 20
  testRunner.When("User LogOut from the Application", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 22
+#line 21
  testRunner.Then("Successful LogOut message should display", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();

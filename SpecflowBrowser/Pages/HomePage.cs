@@ -20,7 +20,8 @@ namespace SpecflowBrowser.Pages
         public HomePage()
             : base()
         {
-            webDriver = new PhantomJSDriver();//new FirefoxDriver(); //Browser.Current;
+            System.Threading.Thread.Sleep(120);
+            webDriver = new FirefoxDriver(); //Browser.Current;
             webDriver.Url = "http://www.store.demoqa.com";
             webDriver.Manage().Timeouts().ImplicitlyWait(TimeSpan.FromSeconds(secondTimeOut));
         }

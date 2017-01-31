@@ -3,7 +3,7 @@ echo "Change Nunit 3 txt report to NUnit 2 txt report"
 call:DoReplace "=>" "*****" TestResult.txt TestResult1.txt
 
 echo "Generate Report"
-..\..\packages\SpecFlow.2.1.0\tools\specflow.exe nunitexecutionreport ..\SpecFlowNUnitDemo.csproj
+..\..\packages\SpecFlow.2.1.0\tools\specflow.exe nunitexecutionreport ..\SpecflowTest.csproj
 
 IF NOT EXIST TestResult.html GOTO FAIL
 EXIT 

@@ -17,7 +17,7 @@ namespace SpecflowBrowser.Pages
         public LoginPage()
             : base()
         {
-     
+            
         }
 
         #region Elements

@@ -4,8 +4,7 @@
 	Log out the web site
 
 
-@Browser:Chrome
-@Browser:Firefox
+
 Scenario: 01 Successful Login with Valid Credentials
 	Given User is at the Home Page
 	And Navigate to LogIn Page

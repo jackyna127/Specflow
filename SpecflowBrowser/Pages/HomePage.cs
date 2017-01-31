@@ -19,7 +19,7 @@ namespace SpecflowBrowser.Pages
         public HomePage()
             : base()
         {
-            webDriver = Browser.Current;
+            webDriver = new FirefoxDriver(); //Browser.Current;
             webDriver.Url = "http://www.store.demoqa.com";
             webDriver.Manage().Timeouts().ImplicitlyWait(TimeSpan.FromSeconds(secondTimeOut));
         }

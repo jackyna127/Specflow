@@ -10,6 +10,7 @@ using OpenQA.Selenium.Support.UI;
 using OpenQA.Selenium.Support.Events;
 using Baseclass.Contrib.SpecFlow.Selenium.NUnit.Bindings;
 using OpenQA.Selenium.PhantomJS;
+using OpenQA.Selenium.Remote;
 
 namespace SpecflowBrowser.Pages
 {
@@ -20,9 +21,13 @@ namespace SpecflowBrowser.Pages
         public HomePage()
             : base()
         {
-            System.Threading.Thread.Sleep(120);
-            webDriver = new FirefoxDriver(); //Browser.Current;
-            webDriver.Url = "http://www.store.demoqa.com";
+             DesiredCapabilities caps = DesiredCapabilities.Firefox();   
+
+             //set the timeout to 120 seconds
+             IWebDriver driver = new RemoteWebDriver(new Uri("http://www.store.demoqa.com"), caps, TimeSpan.FromSeconds(120));
+
+
+           // webDriver.Url = "http://www.store.demoqa.com";
             webDriver.Manage().Timeouts().ImplicitlyWait(TimeSpan.FromSeconds(secondTimeOut));
         }
         #region Elements

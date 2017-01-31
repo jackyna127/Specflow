@@ -9,6 +9,7 @@ using OpenQA.Selenium.Interactions;
 using OpenQA.Selenium.Support.UI;
 using OpenQA.Selenium.Support.Events;
 using Baseclass.Contrib.SpecFlow.Selenium.NUnit.Bindings;
+using OpenQA.Selenium.PhantomJS;
 
 namespace SpecflowBrowser.Pages
 {
@@ -19,7 +20,7 @@ namespace SpecflowBrowser.Pages
         public HomePage()
             : base()
         {
-            webDriver = new FirefoxDriver(); //Browser.Current;
+            webDriver = new PhantomJSDriver();//new FirefoxDriver(); //Browser.Current;
             webDriver.Url = "http://www.store.demoqa.com";
             webDriver.Manage().Timeouts().ImplicitlyWait(TimeSpan.FromSeconds(secondTimeOut));
         }

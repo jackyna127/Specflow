@@ -21,14 +21,10 @@ namespace SpecflowBrowser.Pages
         public HomePage()
             : base()
         {
-             DesiredCapabilities caps = DesiredCapabilities.Firefox();   
-
-             //set the timeout to 120 seconds
-             IWebDriver driver = new RemoteWebDriver(new Uri("http://www.store.demoqa.com"), caps, TimeSpan.FromSeconds(120));
-
-
-           // webDriver.Url = "http://www.store.demoqa.com";
-            webDriver.Manage().Timeouts().ImplicitlyWait(TimeSpan.FromSeconds(secondTimeOut));
+           
+            webDriver = new FirefoxDriver();
+            webDriver.Url = "http://www.store.demoqa.com";
+            webDriver.Manage().Timeouts().ImplicitlyWait(TimeSpan.FromSeconds(120));
         }
         #region Elements
         By myAccount = By.XPath(".//*[@id='account']/a");

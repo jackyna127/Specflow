@@ -21,8 +21,8 @@ namespace SpecflowBrowser.Pages
         public HomePage()
             : base()
         {
-           
-            webDriver = new FirefoxDriver();
+            FirefoxDriverService service = FirefoxDriverService.CreateDefaultService("../../packages/Selenium.Firefox.WebDriver.0.13.0/driver");
+            webDriver = new FirefoxDriver(service, new FirefoxOptions(), TimeSpan.FromSeconds(180));//new FirefoxDriver();
             webDriver.Url = "http://www.store.demoqa.com";
             webDriver.Manage().Timeouts().ImplicitlyWait(TimeSpan.FromSeconds(120));
         }
